@@ -1,0 +1,946 @@
+* {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* #region header */
+header {
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 7.33px;
+    width: 213.86px;
+    height: 36px;
+}
+
+#textLogo {
+    width: 186px;
+    height: 36px;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.4628px;
+    line-height: 35px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 512px;
+}
+
+.textMenu {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    width: 320px;
+    height: 40px;
+}
+
+#phoneNumber {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14;
+    line-height: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+#buttonSession {
+    background-color: #515051;
+    background-size: contain;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 140px;
+    height: 50px;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14;
+    line-height: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+/* #endregion */
+
+/* #region imagen del cafe */
+#description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 48px 40px;
+    gap: 8px;
+    background: rgba(227, 222, 215, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.taza {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 0px 0px 0px;
+    gap: 16px;
+
+}
+
+#plantaTaza {
+    color: #2A5B45;
+    width: 588px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#mundo {
+    width: 588px;
+    height: 88px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    color: #000000;
+}
+
+#trabajamos {
+    width: 588px;
+    height: 32px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+
+#buttonOrg {
+    width: 168px;
+    height: 40px;
+    background: #1F1815;
+    border-radius: 4px;
+    border: none;
+    margin-right: 16px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+#buttonBuy {
+    width: 137px;
+    height: 40px;
+    background: #2A5B45;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+#cupCoffee {
+    width: 588px;
+    height: 390px;
+}
+
+/* #endregion */
+
+/* #region Condiciones */
+#service {
+    background-image: url(/images/Background\ coffee.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 147px;
+    gap: 24px;
+}
+
+#condiciones {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+#cardWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 996px;
+    height: 232px;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 316px;
+    height: 263px;
+    background: #FFFFFF;
+    border: 1px solid #F7F5F3;
+    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
+    border-radius: 8px;
+}
+
+.card img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 8px;
+    width: 64px;
+    height: 64px;
+    background: #2A5B45;
+    border-radius: 20px;
+}
+
+.card h3 {
+    width: 268px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #2B2A2B;
+}
+
+.card p {
+    width: 268px;
+    height: 48px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #111827;
+
+}
+
+/* #endregion */
+
+/* #region Novedades */
+
+#sectionNov {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    height: 603.39px;
+}
+
+#nov {
+    width: 120px;
+    height: 28px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2A5B45;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 1200px;
+    height: 391.39px;
+}
+
+#products>div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+    width: 282px;
+    height: 391.39px;
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+}
+
+#products>div:hover {
+    background: #F7F5F3;
+}
+
+#products>div:hover button {
+    background: #2A5B45;
+}
+
+#products>div>a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+#products>div>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+#products>div>button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    width: 59px;
+    height: 34px;
+    background: rgba(42, 91, 69, 0.7);
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.verTodos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 150px;
+    height: 24px;
+}
+
+.verTodos>a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+/* #endregion */
+
+/* #region FAQ */
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 386px;
+    gap: 24px;
+    background: #2A5B45;
+    height: 520px;
+}
+
+.faqTittle>h2 {
+    height: 28px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.faqContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 668px;
+
+}
+
+#hacerPedido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    height: 95px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+#hacerPedido div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 439px;
+    border-bottom: 2px solid;
+    border-color: #E3DED7;
+    width: 100%;
+
+
+}
+
+#hacerPedido>div>h3 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #2B2A2B;
+    padding-bottom: 15px;
+}
+
+#hacerPedido>p {
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2B2A2B;
+    width: 100%;
+}
+
+#preciosBajos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    height: 110px;
+    background: #F7F5F3;
+    border-radius: 10px;
+}
+
+#preciosBajos div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+    border-bottom: 2px solid;
+    border-color: #E3DED7;
+    width: 100%;
+}
+
+#preciosBajos>div>h3 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #2B2A2B;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#preciosBajos>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2B2A2B;
+    padding-top: 3px;
+    width: 620px;
+}
+
+#enviarCafe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    height: 32px;
+    background: #F7F5F3;
+    border-radius: 10px;
+}
+
+#enviarCafe h3 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #2B2A2B;
+}
+
+#dudas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    height: 24px;
+}
+
+#dudas a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* #endregion */
+
+/* #region shopCoffee */
+#shop {
+    height: 480px;
+    background: #F7F5F3
+}
+
+#shopCoffe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    padding: 44.61px 40px 45.39px 40px;
+}
+
+#pruebalo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 457px;
+    height: 116px;
+}
+
+#pruebalo>h2 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2A5B45;
+}
+
+#pruebalo>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+
+#pruebalo>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+#pruebalo>div>a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+/* #endregion */
+
+/* #region Formulario */
+#containerTwoTone {
+    padding: 0px 40px;
+    height: 552px;
+    background: #E3DED7;
+}
+
+#subContainerTwoTone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    height: 552px;
+    background: #E3DED7;
+    opacity: 0.9;
+
+}
+
+#contacSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 588px;
+    height: 320px;
+}
+
+#conNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    /* width: 588px; */
+    height: 68px;
+
+}
+
+#conNosotros>h3 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111827;
+}
+
+#conNosotros>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 32px;
+    gap: 24px;
+    /* width: 588px; */
+    height: 220px;
+}
+
+.parrafo {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6B7280;
+}
+
+#adress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    /* width: 344px; */
+    height: 27px
+}
+
+#emailPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    /* width: 588px; */
+    height: 60px;
+}
+
+#phone {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 12px;
+    /* width: 588px; */
+    height: 24px;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 12px;
+    /* width: 588px; */
+    height: 24px;
+}
+
+#content>p>a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+#formSection {
+    width: 670px;
+}
+
+#formSection form {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 32px 48px;
+    /* width: 588px; */
+    height: 488px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#inpName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+#inpName label {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #374151
+}
+
+#nameArea {
+    padding: 9px 13px;
+    width: 470px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+#inpEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+    gap: 4px;
+}
+
+#inpEmail label {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #374151
+}
+
+#emailArea {
+    padding: 9px 13px;
+    width: 470px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+#selectArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+    gap: 4px;
+}
+
+#selectArea label {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #374151;
+}
+
+#telInp {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+
+
+#telInp select {
+    padding: 9px 13px;
+    gap: 4px;
+    width: 68px;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border: none;
+}
+
+#telInp>select {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 405px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+
+#telInp input {
+    padding: 9px 13px;
+    width: 401px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border: none;
+}
+
+#textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+#textArea p {
+    height: 16px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #374151;
+    padding-top: 20px;
+}
+
+#textArea textarea {
+    box-sizing: border-box;
+    width: 496px;
+    height: 122px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+#textArea>textarea {
+    padding: 12px 22px 22px 18px;
+}
+
+#politicas {
+    padding-top: 24px;
+    padding-bottom: 28px;
+    gap: 12px;
+}
+
+#politicas label {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #374151;
+}
+
+#politicas>label>a {
+    color: #000000;
+}
+
+#enviarButton {
+    color: #FFFFFF;
+    gap: 8px;
+    width: 90px;
+    height: 40px;
+    background: #2A5B45;
+    border-radius: 4px;
+    border: none;
+}
+/* #endregion */
