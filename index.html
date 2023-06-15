@@ -70,7 +70,7 @@
                     sin tu taza de la mañana. </p>
             </div>
             <div class="card">
-                <img src="/images/Truck.png" alt="Truck">
+                <img src="/images/Truck.png" alt="Truck" id="truck">
                 <h3>Envío en 24/48h</h3>
                 <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
             </div>
@@ -214,11 +214,11 @@
                 <form>
                     <div id="inpName">
                         <label for="">Nombre Completo</label>
-                        <input type="text" id="nameArea">
+                        <input type="text" id="nameArea" autocomplete="on">
                     </div>
                     <div id="inpEmail">
                         <label for="">Email</label>
-                        <input type="email" name="" id="emailArea">
+                        <input type="email" name="" id="emailArea" autocomplete="on">
                     </div>
                     <div id="selectArea">
                         <label for="">Telefono</label>
@@ -231,7 +231,7 @@
                                 <option value="">DK</option>
                                 <option value="">GR</option>
                             </select>
-                            <input type="tel" placeholder="+1 (555) 987-6543">
+                            <input type="tel" placeholder="+1 (555) 987-6543" autocomplete="on">
                         </div>
                     </div>
                     <div id="textArea">
@@ -250,7 +250,36 @@
     </section>
     <!-- #endregion -->
 
-
+    <footer>
+        <section id="terminos">
+            <article class="logo">
+                <p id="logoFooter">cafedealtura.com</p>
+                <img src="/images/Vector.png" alt="taza de cafe" text>
+            </article>
+            <article id="seccionTienda">
+                <div id="seccionAyuda">
+                    <h3>Te ayudamos en</h3>
+                    <button id="telfButton"><img src="/images/Phone boton footer.png" alt=""><a href="">+34 919 49 05 18</a></button>
+                    <button id="emailButton"><img src="/images/mail boton footer.png" alt=""><a href="">hola@cafedealtura.com</a></button>
+                </div>
+                <div id="suscripcion">
+                    <a href="">Tienda</a>
+                    <a href="">Suscripción</a>
+                    <a href="">Para empresas</a>
+                    <a href="">Sobre nosotros</a>
+                    <a href="">Contacto</a>
+                </div>
+                <div id="cookies">
+                    <a href="">Política de privacidad</a>
+                    <a href="">Política de cookies</a>
+                    <a href="">Términos y condiciones</a>
+                </div>
+            </article>
+        </section>
+        <section id="derechosReservados">
+            <a href="">Todos los derechos reservados - Café de Altura SL - 2022</a>
+        </section>
+    </footer>
 
 
 </body>

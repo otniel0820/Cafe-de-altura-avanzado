@@ -94,6 +94,7 @@ header {
     line-height: 16px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 /* #endregion */
@@ -166,6 +167,7 @@ header {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 #buttonBuy {
@@ -180,6 +182,7 @@ header {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 #cupCoffee {
@@ -276,6 +279,10 @@ header {
 
 }
 
+#truck {
+    margin-top: 25px;
+}
+
 /* #endregion */
 
 /* #region Novedades */
@@ -323,6 +330,7 @@ header {
     height: 391.39px;
     border: 1px solid #E3DED7;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 #products>div:hover {
@@ -627,6 +635,7 @@ header {
     color: #000000;
 }
 
+
 /* #endregion */
 
 /* #region Formulario */
@@ -656,6 +665,7 @@ header {
     gap: 32px;
     width: 588px;
     height: 320px;
+
 }
 
 #conNosotros {
@@ -763,7 +773,7 @@ header {
     /* width: 588px; */
     height: 488px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 #inpName {
@@ -793,6 +803,10 @@ header {
     border-radius: 6px;
 }
 
+#nameArea:focus {
+    outline: none;
+}
+
 #inpEmail {
     display: flex;
     flex-direction: column;
@@ -818,6 +832,10 @@ header {
     border: 1px solid #D1D5DB;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
+}
+
+#emailArea:focus {
+    outline: none;
 }
 
 #selectArea {
@@ -862,6 +880,10 @@ header {
     border: none;
 }
 
+#telInp select:focus {
+    outline: none;
+}
+
 #telInp>select {
     font-family: 'Outfit';
     font-style: normal;
@@ -882,12 +904,20 @@ header {
     border: none;
 }
 
+#telInp input:focus {
+    outline: none;
+}
+
 #textArea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
+}
+
+#textArea textarea:focus {
+    outline: none;
 }
 
 #textArea p {
@@ -942,5 +972,158 @@ header {
     background: #2A5B45;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
+
 /* #endregion */
+
+footer {
+    background: #1F1815;
+}
+
+#terminos {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 40px 37px 40px;
+    gap: 16px;
+    width: 1132px;
+}
+
+#logoFooter {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.4628px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+#seccionTienda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seccionAyuda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+#seccionAyuda>h3 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#telfButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 182px;
+    height: 48px;
+    background: #515051;
+    border-radius: 4px;
+    border: none;
+}
+
+#telfButton>a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-top: 4px;
+}
+
+#emailButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 232px;
+    height: 48px;
+    background: #515051;
+    border-radius: 4px;
+    border: none;
+}
+
+#emailButton>a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+#emailButton>img {
+    padding-top: 2px;
+}
+
+#suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 120px;
+    gap: 16px;
+}
+
+#suscripcion a {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#cookies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 100px;
+    padding-bottom: 68px;
+    gap: 16px;
+}
+
+#cookies a{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#derechosReservados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2B2A2B;
+    height: 40px;
+}
+#derechosReservados a{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+text-decoration: none;
+}
