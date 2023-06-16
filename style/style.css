@@ -635,7 +635,7 @@ header {
     color: #000000;
 }
  #imgCafeteria{
-    width: 50%;
+    width: 48%;
 }
 #imgCafeteria img{
     width: 100%;
@@ -650,6 +650,7 @@ header {
     padding: 0px 40px;
     height: 552px;
     background: #E3DED7;
+    
 }
 
 #subContainerTwoTone {
@@ -661,6 +662,7 @@ header {
     height: 552px;
     background: #E3DED7;
     opacity: 0.9;
+    
 
 }
 
@@ -670,7 +672,7 @@ header {
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-    width: 588px;
+    width: 50%;
     height: 320px;
 
 }
