@@ -120,7 +120,7 @@ header {
 
 }
 
-.taza {
+.cup {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -129,7 +129,7 @@ header {
 
 }
 
-#plantaTaza {
+#cupPlant {
     color: #2A5B45;
     width: 588px;
     height: 24px;
@@ -140,7 +140,7 @@ header {
     line-height: 24px;
 }
 
-#mundo {
+#world {
     width: 588px;
     height: 88px;
     font-family: 'Outfit';
@@ -151,7 +151,7 @@ header {
     color: #000000;
 }
 
-#trabajamos {
+#weWork {
     width: 588px;
     height: 32px;
     font-family: 'Outfit';
@@ -193,7 +193,7 @@ header {
     cursor: pointer;
 }
 
-#boxCupCoffee{
+#boxCupCoffee {
     width: 48%;
 }
 
@@ -219,7 +219,7 @@ header {
     gap: 24px;
 }
 
-#condiciones {
+#conditions {
     text-align: center;
     font-style: normal;
     font-weight: 500;
@@ -390,7 +390,7 @@ header {
     cursor: pointer;
 }
 
-.verTodos {
+.seeAll {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -400,13 +400,17 @@ header {
     height: 24px;
 }
 
-.verTodos>a {
+.seeAll>a {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+}
+
+.seeAll img {
+    cursor: pointer;
 }
 
 /* #endregion */
@@ -442,7 +446,7 @@ header {
 
 }
 
-#hacerPedido {
+#placeOrder {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -454,7 +458,7 @@ header {
     border-radius: 10px;
 }
 
-#hacerPedido div {
+#placeOrder div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -468,7 +472,7 @@ header {
 
 }
 
-#hacerPedido>div>h3 {
+#placeOrder>div>h3 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -480,7 +484,7 @@ header {
     padding-bottom: 15px;
 }
 
-#hacerPedido>p {
+#placeOrder>p {
     display: flex;
     justify-content: center;
     padding-top: 3px;
@@ -493,7 +497,7 @@ header {
     width: 100%;
 }
 
-#preciosBajos {
+#lowPrices {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -505,7 +509,7 @@ header {
     border-radius: 10px;
 }
 
-#preciosBajos div {
+#lowPrices div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -517,7 +521,7 @@ header {
     width: 100%;
 }
 
-#preciosBajos>div>h3 {
+#lowPrices>div>h3 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -530,7 +534,7 @@ header {
     padding-bottom: 10px;
 }
 
-#preciosBajos>p {
+#lowPrices>p {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
@@ -541,7 +545,7 @@ header {
     width: 620px;
 }
 
-#enviarCafe {
+#sendCoffee {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -554,7 +558,7 @@ header {
     border-radius: 10px;
 }
 
-#enviarCafe h3 {
+#sendCoffee h3 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -565,7 +569,7 @@ header {
     color: #2B2A2B;
 }
 
-#dudas {
+#questions {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -574,13 +578,17 @@ header {
     height: 24px;
 }
 
-#dudas a {
+#questions a {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+}
+
+#questions img {
+    cursor: pointer;
 }
 
 /* #endregion */
@@ -601,7 +609,7 @@ header {
     padding: 44.61px 40px 45.39px 40px;
 }
 
-#pruebalo {
+#tryIt {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -611,7 +619,7 @@ header {
     height: 116px;
 }
 
-#pruebalo>h2 {
+#tryIt>h2 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
@@ -620,7 +628,7 @@ header {
     color: #2A5B45;
 }
 
-#pruebalo>p {
+#tryIt>p {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
@@ -629,7 +637,7 @@ header {
     color: #111827;
 }
 
-#pruebalo>div {
+#tryIt>div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -637,7 +645,7 @@ header {
     gap: 16px;
 }
 
-#pruebalo>div>a {
+#tryIt>div>a {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -647,15 +655,18 @@ header {
     color: #000000;
 }
 
-#imgCafeteria {
+#imgCoffeeShop {
     width: 48%;
 }
 
-#imgCafeteria img {
+#imgCoffeeShop img {
     width: 100%;
     height: 100%;
 }
 
+#arrowNov {
+    cursor: pointer;
+}
 
 /* #endregion */
 
@@ -691,18 +702,17 @@ header {
 
 }
 
-#conNosotros {
+#withUs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 12px;
-    /* width: 588px; */
     height: 68px;
 
 }
 
-#conNosotros>h3 {
+#withUs>h3 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -711,7 +721,7 @@ header {
     color: #111827;
 }
 
-#conNosotros>p {
+#withUs>p {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
@@ -726,11 +736,10 @@ header {
     align-items: flex-start;
     padding-top: 32px;
     gap: 24px;
-    /* width: 588px; */
     height: 220px;
 }
 
-.parrafo {
+.paragraph {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
@@ -754,7 +763,7 @@ header {
     align-items: flex-start;
     padding: 0px;
     gap: 12px;
-    /* width: 588px; */
+    
     height: 60px;
 }
 
@@ -763,7 +772,7 @@ header {
     flex-direction: row;
     padding: 0px;
     gap: 12px;
-    /* width: 588px; */
+    
     height: 24px;
 }
 
@@ -772,7 +781,6 @@ header {
     flex-direction: row;
     padding: 0px;
     gap: 12px;
-    /* width: 588px; */
     height: 24px;
 }
 
@@ -793,7 +801,6 @@ header {
     display: flex;
     flex-direction: column;
     padding: 32px 32px 32px 48px;
-    /* width: 588px; */
     height: 488px;
     background: #FFFFFF;
 
@@ -901,7 +908,6 @@ header {
     width: 68px;
     height: 35px;
     background: #FFFFFF;
-    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); */
     border-radius: 6px;
     border: none;
 }
@@ -970,13 +976,13 @@ header {
     padding: 12px 22px 22px 18px;
 }
 
-#politicas {
+#policy {
     padding-top: 24px;
     padding-bottom: 28px;
     gap: 12px;
 }
 
-#politicas label {
+#policy label {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
@@ -985,7 +991,7 @@ header {
     color: #374151;
 }
 
-#politicas>label>a {
+#policy>label>a {
     color: #000000;
 }
 
@@ -993,7 +999,7 @@ header {
     accent-color: #2A5B45;
 }
 
-#enviarButton {
+#sendButton {
     color: #FFFFFF;
     gap: 8px;
     width: 90px;
@@ -1016,7 +1022,6 @@ footer {
     flex-direction: column;
     padding: 28px 40px 37px 40px;
     gap: 16px;
-    width: 1132px;
 }
 
 #logoFooter {
@@ -1028,13 +1033,13 @@ footer {
     color: #FFFFFF;
 }
 
-#seccionTienda {
+#storeSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#seccionAyuda {
+#helpSection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1042,7 +1047,7 @@ footer {
     gap: 16px;
 }
 
-#seccionAyuda>h3 {
+#helpSection>h3 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -1105,15 +1110,16 @@ footer {
     padding-top: 2px;
 }
 
-#suscripcion {
+#subscription {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 260px;
+    position: relative;
+    right: -1%;
     gap: 16px;
 }
 
-#suscripcion a {
+#subscription a {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -1127,7 +1133,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 200px;
+    position: relative;
+    right: 21%;
     padding-bottom: 68px;
     gap: 16px;
 }
@@ -1142,7 +1149,7 @@ footer {
     text-decoration: none;
 }
 
-#derechosReservados {
+#rightsReserved {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1150,7 +1157,7 @@ footer {
     height: 40px;
 }
 
-#derechosReservados a {
+#rightsReserved a {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
