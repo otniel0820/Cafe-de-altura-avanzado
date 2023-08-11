@@ -1,111 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe de Altura</title>
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- #region Header -->
     <header>
-        <div class="logo">
-            <p id="textLogo">cafedealtura.com</p>
-            <img src="/images/Vector.png" alt="taza de cafe" text>
+      <div class="logo">
+        <p id="textLogo">cafedealtura.com</p>
+        <img src="/images/Vector.png" alt="taza de cafe" text />
+      </div>
+      <div class="menu">
+        <a href="./tienda.html" target="_blank" class="textMenu">Tienda</a>
+        <a href="./suscripcion.html" target="_blank" class="textMenu"
+          >Suscripcion</a
+        >
+        <a href="./paraEmpresas.html" target="_blank" class="textMenu"
+          >Para empresas</a
+        >
+        <a href="./sobreNosotros.html" target="_blank" class="textMenu"
+          >Sobre nosotros</a
+        >
+        <a href="./Contactos.html" target="_blank" class="textMenu">Contacto</a>
+      </div>
+      <div id="contact">
+        <div id="telNavBar">
+          <a href=""><img src="/images/imgtelf.png" alt="imgMovil" /></a>
+          <a href="" id="phoneNumber">+34 919 49 05 18</a>
         </div>
-        <div class="menu">
-            <a href="" class="textMenu">Tienda</a>
-            <a href="" class="textMenu">Suscripcion</a>
-            <a href="" class="textMenu">Para empresas</a>
-            <a href="" class="textMenu">Sobre nosotros</a>
-            <a href="" class="textMenu">Contacto</a>
+        <div id="boxButton">
+          <a href="./inicioSesion/inicioS.html" target="_blank"><button id="buttonSession">Iniciar Sesión</button></a>
         </div>
-        <div id="contact">
-            <div id="telNavBar">
-                <a href=""><img src="/images/imgtelf.png" alt="imgMovil"></a>
-                <a href="" id="phoneNumber">+34 919 49 05 18</a>
-            </div>
-            <div id="boxButton">
-                <a href=""><button id="buttonSession">Iniciar Sesión</button></a>
-            </div>
-        </div>
-        <div>
-            <a href=""><img src="/images/Carr.png" alt="Car Shopping"></a>
-        </div>
+      </div>
+      <div>
+        <a href="./car.html" target="_blank" id="buyCar"
+          ><img src="/images/Carr.png" alt="Car Shopping"
+        /></a>
+      </div>
     </header>
     <!-- #endregion -->
     <!-- #region imagen del cafe -->
     <section id="description">
-        <div class="cup">
-            <h3 id="cupPlant">De la planta a tu taza</h3>
-            <h1 id="world">El mejor café del mundo, ahora en tu casa.</h1>
-            <p id="weWork">Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café
-                y que puedas viajar desde la comodidad de tu hogar.</p>
-            <div id="boxButton2">
-                <button id="buttonOrg">Descubrir orígenes</button>
-                <button id="buttonBuy">Comprar café</button>
-            </div>
+      <div class="cup">
+        <h3 id="cupPlant">De la planta a tu taza</h3>
+        <h1 id="world">El mejor café del mundo, ahora en tu casa.</h1>
+        <p id="weWork">
+          Trabajamos con agricultores de todo el mundo para seleccionar los
+          mejores granos de café y que puedas viajar desde la comodidad de tu
+          hogar.
+        </p>
+        <div id="boxButton2">
+          <a href="./sobreNosotros.html" target="_blank"
+            ><button id="buttonOrg">Descubrir orígenes</button></a
+          >
+          <a href="#sectionNov"><button id="buttonBuy">Comprar café</button></a>
         </div>
-        <div id="boxCupCoffee">
-            <img src="/images/Hero image.png" alt="coffee harvesting" id="cupCoffee">
-        </div>
+      </div>
+      <div id="boxCupCoffee">
+        <img
+          src="/images/Hero image.png"
+          alt="coffee harvesting"
+          id="cupCoffee"
+        />
+      </div>
     </section>
     <!-- #endregion -->
     <!-- #region Condiciones -->
     <section id="service">
-        <div>
-            <h2 id="conditions">Café con las mejores condiciones</h2>
+      <div>
+        <h2 id="conditions">Café con las mejores condiciones</h2>
+      </div>
+      <div id="cardWrapper">
+        <div class="card">
+          <img src="/images/checklist.png" alt="Checklist" />
+          <h3>Recibe tu pedido sin preocuparte</h3>
+          <p>
+            Tienes cosas más importantes en la cabeza, por eso con nuestra
+            suscripción de café, nunca te quedarás sin tu taza de la mañana.
+          </p>
         </div>
-        <div id="cardWrapper">
-            <div class="card">
-                <img src="/images/checklist.png" alt="Checklist">
-                <h3>Recibe tu pedido sin preocuparte</h3>
-                <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás
-                    sin tu taza de la mañana. </p>
-            </div>
-            <div class="card">
-                <img src="/images/Truck.png" alt="Truck" id="truck">
-                <h3>Envío en 24/48h</h3>
-                <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
-            </div>
-            <div class="card">
-                <img src="/images/Gift.png" alt="Gift">
-                <h3>Descuentos y beneficios</h3>
-                <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
-                    nosotros.</p>
-            </div>
+        <div class="card">
+          <img src="/images/Truck.png" alt="Truck" id="truck" />
+          <h3>Envío en 24/48h</h3>
+          <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
         </div>
+        <div class="card">
+          <img src="/images/Gift.png" alt="Gift" />
+          <h3>Descuentos y beneficios</h3>
+          <p>
+            Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa,
+            para que lo descubras junto a nosotros.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- #endregion -->
     <!-- #region Novedades -->
     <section id="sectionNov">
-        <article>
-            <h2 id="nov">Novedades</h2>
-        </article>
-        <article id="products">
-            <div>
+      <article>
+        <h2 id="nov">Novedades</h2>
+      </article>
+      <article id="products">
+        <!-- <div>
                 <img src="/images/cafe costa rica.png" alt="Coffee Costa Rica">
                 <a href="">
                     <h3>Costa Rica Tarrazú</h3>
                 </a>
                 <p>9,00 €</p>
                 <button class="buttonProducts">Añadir</button>
-            </div>
-            <div>
+            </div> -->
+        <!-- <div>
                 <img src="/images/cafe colombia.png" alt="Coffee Colombia">
                 <a href="">
                     <h3>Colombia Los Naranjos</h3>
                 </a>
                 <p>9,00 €</p>
                 <button class="buttonProducts">Añadir</button>
-            </div>
-            <div>
+            </div> -->
+        <!-- <div>
                 <img src="/images/cafe laos.png" alt="Coffee Laos">
                 <a href="">
                     <h3>Laos Amanecer</h3>
@@ -120,167 +142,249 @@
                 </a>
                 <p>9,00 €</p>
                 <button class="buttonProducts">Añadir</button>
-            </div>
-        </article>
-        <article class="seeAll">
-            <a href="">Ver Todos</a>
-            <img src="/images/flechita.png" alt="Flecha">
-        </article>
+            </div> -->
+      </article>
+      <article class="seeAll">
+        <a href="./tienda.html" target="_blank">Ver todos</a>
+        <img src="/images/flechita.png" alt="Flecha" />
+      </article>
     </section>
     <!-- #endregion -->
     <!-- #region FAQ -->
     <section class="faq">
-        <article class="faqTittle">
-            <h2>Preguntas frecuentes</h2>
+      <article class="faqTittle">
+        <h2>Preguntas frecuentes</h2>
+      </article>
+      <article class="faqContent">
+        <div>
+          <div id="placeOrder">
+          <div>
+            <h3>¿Cómo hago el pedido?</h3>
+            <button id="btnOrder"
+              ><img
+                src="/images/flecha hacia arriba.png"
+                alt="Flecha hacia arriba"
+            /></button>
+          </div>
+          
+        </div>
+        <article id="pOrder">
+          <p >
+          Selecciona el café que desees probar y completa el proceso de
+          compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te
+          lo mandemos a casa y así nunca te quedarás sin café
+        </p>
+      </article>
+        </div>
+        <div>
+          <div id="lowPrices">
+          <div>
+            <h3>¿Por qué los precios son tan bajos?</h3>
+            <button id="btnLowPrice"
+              ><img
+                src="/images/flecha hacia arriba.png"
+                alt="Flecha hacia arriba"
+            /></button>
+          </div>
+        </div>
+        <article id="pLowerPrice">
+            <p >
+            Viajamos constantemente para encontrar los mejores granos y a los
+            agricultores más exigentes. Si podemos ofrecerte estos precios es
+            porque tratamos directamente con los productores de café, sin
+            intermediarios. Así obtenemos el mejor precio para ti y la persona
+            que está detrás de los granos de café recibe el mayor beneficio
+            posible.
+            </p>
         </article>
-        <article class="faqContent">
-            <div id="placeOrder">
-                <div>
-                    <h3>¿Cómo hago el pedido?</h3>
-                    <img src="/images/flecha hacia arriba.png" alt="Flecha hacia arriba">
-                </div>
-                <p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te
-                    preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café</p>
-            </div>
-            <div id="lowPrices">
-                <div>
-                    <h3>¿Por qué los precios son tan bajos?</h3>
-                    <img src="/images/flecha hacia arriba.png" alt="Flecha hacia arriba">
-                </div>
-                <p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si
-                    podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
-                    intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos de
-                    café recibe el mayor beneficio posible. </p>
-            </div>
-            <div id="sendCoffee">
-                <h3>¿Es posible enviar café a mi oficina? </h3>
-                <img src="/images/flecha hacia abajo.png" alt="Flecha hacia abajo">
-            </div>
-        </article>
-        <article id="questions">
-            <a href="">Resolvemos tus dudas</a>
-            <img src="/images/Flecha blanca.png" alt="Flecha">
-        </article>
+        </div>
+        <div>
+          <div id="sendCoffee">
+          <div>
+            <h3>¿Es posible enviar café a mi oficina?</h3>
+            <button id="btnSend"
+              ><img
+                src="/images/flecha hacia arriba.png"
+                alt="Flecha hacia abajo"
+            /></button>
+          </div> 
+        </div>
+        <article id="pSend">
+            <p >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
+            earum modi? Omnis necessitatibus est eaque qui delectus cum id
+            debitis, nihil adipisci, tempore ipsa rerum commodi. Harum corrupti
+            asperiores vel?
+          </p>
+          </article>
+        </div>
+        
+      </article>
+      <article id="questions">
+        <a href="">Resolvemos tus dudas</a>
+        <img src="/images/Flecha blanca.png" alt="Flecha" />
+      </article>
     </section>
     <!-- #endregion -->
     <!-- #region shopCoffee -->
     <section id="shop">
-        <div id="shopCoffe">
-            <article id="tryIt">
-                <h2>Pruébalo en nuestro coffee shop</h2>
-                <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu
-                    pedido y llévate un descuento</p>
-                <div>
-                    <a href="">Como llegar</a>
-                    <img src="/images/flechita.png" alt="Flecha" id="arrowNov">
-                </div>
-            </article>
-            <article id="imgCoffeeShop">
-                <img src="/images/Cafeteria.png" alt="Cafeteria" >
-            </article>
-        </div>
+      <div id="shopCoffe">
+        <article id="tryIt">
+          <h2>Pruébalo en nuestro coffee shop</h2>
+          <p>
+            Visita nuestra cafetería en el centro de la ciudad para probar los
+            granos de café antes de hacer tu pedido y llévate un descuento
+          </p>
+          <div>
+            <a href="#contactSection">Como llegar</a>
+            <img src="/images/flechita.png" alt="Flecha" id="arrowNov" />
+          </div>
+        </article>
+        <article id="imgCoffeeShop">
+          <img src="/images/Cafeteria.png" alt="Cafeteria" />
+        </article>
+      </div>
     </section>
     <!-- #endregion -->
     <!-- #region Formulario -->
     <section id="containerTwoTone">
-        <div id="subContainerTwoTone">
-            <article id="contactSection">
-                <div id="withUs">
-                    <h3>Entra en contacto con nosotros</h3>
-                    <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo
-                        antes posible.</p>
-                </div>
-                <div id="content">
-                    <p class="paragraph">También puedes ponerte en contacto con nostros en nuestra dirección o a través
-                        del teléfono de la tienda.</p>
-                    <div id="adress">
-                        <p class="paragraph">742 Evergreen Terrace</p>
-                        <p class="paragraph">Springfield, OR 12345</p>
-                    </div>
-                    <div id="emailPhone">
-                        <div id="phone">
-                            <img src="/images/phone.png" alt="icono telefono">
-                            <p class="pparagraph">+1 (555) 123-4567</p>
-                        </div>
-                        <div id="email">
-                            <img src="/images/Mail.png" alt="Mail">
-                            <p class="paragraph">support@example.com</p>
-                        </div>
-                    </div>
-                    <p class="paragraph">¿Buscas Trabajo? <a href=""><b> Ver nuestas ofertas</b></a></p>
-                </div>
-            </article>
-            <article id="formSection">
-                <form>
-                    <div id="inpName">
-                        <label for="">Nombre Completo</label>
-                        <input type="text" id="nameArea" autocomplete="on">
-                    </div>
-                    <div id="inpEmail">
-                        <label for="">Email</label>
-                        <input type="email" name="" id="emailArea" autocomplete="on">
-                    </div>
-                    <div id="selectArea">
-                        <label for="">Telefono</label>
-                        <div id="telInp">
-                            <select name="" id="">
-                                <option value="">US</option>
-                                <option value="">ES</option>
-                                <option value="">FR</option>
-                                <option value="">CA</option>
-                                <option value="">DK</option>
-                                <option value="">GR</option>
-                            </select>
-                            <input type="tel" placeholder="+1 (555) 987-6543" autocomplete="on">
-                        </div>
-                    </div>
-                    <div id="textArea">
-                        <p></p>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="¿En que podemos ayudarte?"></textarea>
-                    </div>
-                    <div id="policy">
-                        <input type="checkbox" name="" id="checkbox">
-                        <label for="">Acepta la <a href=""><b>Politica de Privacidad</b></a> y los <a
-                                href=""><b>Terminos y Condiciones.</b></a></label>
-                    </div>
-                    <button id="sendButton">Enviar</button>
-                </form>
-            </article>
-        </div>
+      <div id="subContainerTwoTone">
+        <article id="contactSection">
+          <div id="withUs">
+            <h3>Entra en contacto con nosotros</h3>
+            <p>
+              Si tienes dudas, ponte en contacto con nosotros a través del
+              formulario y te responderemos lo antes posible.
+            </p>
+          </div>
+          <div id="content">
+            <p class="paragraph">
+              También puedes ponerte en contacto con nostros en nuestra
+              dirección o a través del teléfono de la tienda.
+            </p>
+            <div id="adress">
+              <p class="paragraph">742 Evergreen Terrace</p>
+              <p class="paragraph">Springfield, OR 12345</p>
+            </div>
+            <div id="emailPhone">
+              <div id="phone">
+                <img src="/images/phone.png" alt="icono telefono" />
+                <p class="pparagraph">+1 (555) 123-4567</p>
+              </div>
+              <div id="email">
+                <img src="/images/Mail.png" alt="Mail"/>
+                <p class="paragraph">support@example.com</p>
+              </div>
+            </div>
+            <p class="paragraph">
+              ¿Buscas Trabajo?
+              <a href="./ofertasTrabajo.html" target="_blank"
+                ><b> Ver nuestas ofertas</b></a
+              >
+            </p>
+          </div>
+        </article>
+        <article id="formSection">
+          <form>
+            <div id="inpName">
+              <label for="">Nombre Completo</label>
+              <input type="text" id="nameArea" autocomplete="on" />
+            </div>
+            <div id="inpEmail">
+              <label for="">Email</label>
+              <input type="email" name="" id="emailArea" autocomplete="on" />
+            </div>
+            <div id="selectArea">
+              <label for="">Telefono</label>
+              <div id="telInp">
+                <select name="" id="">
+                  <option value="">US</option>
+                  <option value="">ES</option>
+                  <option value="">FR</option>
+                  <option value="">CA</option>
+                  <option value="">DK</option>
+                  <option value="">GR</option>
+                </select>
+                <input
+                  type="tel"
+                  placeholder="+1 (555) 987-6543"
+                  autocomplete="on"
+                  id="phoneArea"
+                />
+              </div>
+            </div>
+            <div id="textArea">
+              <p></p>
+              <textarea
+                name=""
+                id="messageArea"
+                cols="30"
+                rows="10"
+                placeholder="¿En que podemos ayudarte?"
+              ></textarea>
+            </div>
+            <div id="policy">
+              <input type="checkbox" name="" id="checkbox" />
+              <label for=""
+                >Acepta la <a href=""><b>Politica de Privacidad</b></a> y los
+                <a href=""><b>Terminos y Condiciones.</b></a></label
+              >
+            </div>
+            <input type="submit" id="sendButton"></input>
+          </form>
+        </article>
+      </div>
     </section>
     <!-- #endregion -->
     <!-- #region footer -->
     <footer>
-        <section id="terminos">
-            <article class="logo">
-                <p id="logoFooter">cafedealtura.com</p>
-                <img src="/images/Vector.png" alt="taza de cafe" text>
-            </article>
-            <article id="storeSection">
-                <div id="helpSection">
-                    <h3>Te ayudamos en</h3>
-                    <button id="telfButton"><img src="/images/Phone boton footer.png" alt=""><a href="">+34 919 49 05 18</a></button>
-                    <button id="emailButton"><img src="/images/mail boton footer.png" alt=""><a href="">hola@cafedealtura.com</a></button>
-                </div>
-                <div id="subscription">
-                    <a href="">Tienda</a>
-                    <a href="">Suscripción</a>
-                    <a href="">Para empresas</a>
-                    <a href="">Sobre nosotros</a>
-                    <a href="">Contacto</a>
-                </div>
-                <div id="cookies">
-                    <a href="">Política de privacidad</a>
-                    <a href="">Política de cookies</a>
-                    <a href="">Términos y condiciones</a>
-                </div>
-            </article>
-        </section>
-        <section id="rightsReserved">
-            <a href="">Todos los derechos reservados - Café de Altura SL - 2022</a>
-        </section>
+      <section id="terminos">
+        <article class="logo">
+          <p id="logoFooter">cafedealtura.com</p>
+          <img src="/images/Vector.png" alt="taza de cafe" text />
+        </article>
+        <article id="storeSection">
+          <div id="helpSection">
+            <h3>Te ayudamos en</h3>
+            <button id="telfButton">
+              <img src="/images/Phone boton footer.png" alt="" /><a href=""
+                >+34 919 49 05 18</a
+              >
+            </button>
+            <button id="emailButton">
+              <img src="/images/mail boton footer.png" alt="" /><a href=""
+                >hola@cafedealtura.com</a
+              >
+            </button>
+          </div>
+          <div id="subscription">
+            <a href="./tienda.html" target="_blank">Tienda</a>
+            <a href="./suscripcion.html" target="_blank">Suscripción</a>
+            <a href="./paraEmpresas.html" target="_blank">Para empresas</a>
+            <a href="./sobreNosotros.html" target="_blank">Sobre nosotros</a>
+            <a href="./Contactos.html" target="_blank">Contacto</a>
+          </div>
+          <div id="cookies">
+            <a href="./politicasPrivacidad.html" target="_blank"
+              >Política de privacidad</a
+            >
+            <a href="./politicaCookies.html" target="_blank"
+              >Política de cookies</a
+            >
+            <a href="./terminosCondiciones.html" target="_blank"
+              >Términos y condiciones</a
+            >
+          </div>
+        </article>
+      </section>
+      <section id="rightsReserved">
+        <a href="./derechosReservados.html" target="_blank"
+          >Todos los derechos reservados - Café de Altura SL - 2022</a
+        >
+      </section>
     </footer>
     <!-- #endregion -->
 
-
-</body>
+    <script src="./main.js"></script>
+  </body>
+</html>

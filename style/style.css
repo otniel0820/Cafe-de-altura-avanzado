@@ -374,7 +374,7 @@ header {
     color: #000000;
 }
 
-#products>div>button {
+.buttonProducts {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -394,7 +394,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 2em;
+    padding-left: 5em;
     gap: 16px;
     width: 150px;
     height: 24px;
@@ -423,7 +424,7 @@ header {
     padding: 48px 386px;
     gap: 24px;
     background: #2A5B45;
-    height: 520px;
+    /* height: 520px; */
 }
 
 .faqTittle>h2 {
@@ -451,11 +452,14 @@ header {
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
-    gap: 16px;
+    /* gap: 16px; */
     width: 668px;
-    height: 95px;
+    height: 17px;
     background: #FFFFFF;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
 }
 
 #placeOrder div {
@@ -464,7 +468,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 439px;
+    /* gap: 439px; */
     border-bottom: 2px solid;
     border-color: #E3DED7;
     width: 100%;
@@ -484,7 +488,20 @@ header {
     padding-bottom: 15px;
 }
 
-#placeOrder>p {
+#pOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    /* height: 95px; */
+    background: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#pOrder>p {
     display: flex;
     justify-content: center;
     padding-top: 3px;
@@ -504,9 +521,11 @@ header {
     padding: 24px;
     gap: 16px;
     width: 668px;
-    height: 110px;
+    height: 12px;
     background: #F7F5F3;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #lowPrices div {
@@ -534,7 +553,21 @@ header {
     padding-bottom: 10px;
 }
 
-#lowPrices>p {
+#pLowerPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    /* height: 110px; */
+    background: #F7F5F3;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#pLowerPrice>p {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
@@ -547,18 +580,29 @@ header {
 
 #sendCoffee {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 24px;
     gap: 16px;
     width: 668px;
-    height: 32px;
+    height: 12px;
     background: #F7F5F3;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
-#sendCoffee h3 {
+#sendCoffee div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+    border-bottom: 2px solid;
+    border-color: #E3DED7;
+    width: 100%;
+}
+#sendCoffee>div> h3 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -567,6 +611,32 @@ header {
     display: flex;
     align-items: flex-end;
     color: #2B2A2B;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#pSend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    width: 668px;
+    /* height: 110px; */
+    background: #F7F5F3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#pSend>p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2B2A2B;
+    padding-top: 3px;
+    width: 620px;
 }
 
 #questions {
