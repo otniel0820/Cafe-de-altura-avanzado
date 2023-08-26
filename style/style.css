@@ -1,298 +1,398 @@
 * {
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
 /* #region header */
 header {
-    background-color: black;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
-
+  position: sticky;
+  top: 0px;
+  /* width: 96%; */
+  background-color: black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
 }
 
+
 .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 7.33px;
-    width: 213.86px;
-    height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 7.33px;
+  width: 213.86px;
+  height: 36px;
+  color: white;
+  text-decoration: none;
 }
 
 #textLogo {
-    width: 186px;
-    height: 36px;
-    font-family: 'Outfit', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23.4628px;
-    line-height: 35px;
+  width: 186px;
+  height: 36px;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.4628px;
+  line-height: 35px;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 512px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 512px;
 }
 
 .textMenu {
-    font-family: 'Outfit', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: white;
-    text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  text-decoration: none;
 }
 
 #contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-    width: 320px;
-    height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: 320px;
+  height: 40px;
 }
 
 #phoneNumber {
-    font-family: 'Outfit', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
-    color: white;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: white;
 }
 
 #telNavBar {
-    display: flex;
-    justify-content: center;
-    gap: 11px;
-    padding-top: 5px;
-
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  padding-top: 5px;
 }
 
 #buttonSession {
-    background-color: #515051;
-    background-size: contain;
-    border-radius: 4px;
-    padding: 12px 24px;
-    width: 140px;
-    height: 50px;
-    border: none;
-    font-family: 'Outfit', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14;
-    line-height: 16px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  background-color: #515051;
+  background-size: contain;
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: 140px;
+  height: 50px;
+  border: none;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14;
+  line-height: 16px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+#buyCar {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+.countProducts {
+  /* position: absolute;
+    top: 55%; */
+  color: #ffffff;
+  right: 0;
+  background-color: #000000;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.containerCart {
+  display: flex;
+}
+.cartHidden {
+  display: none;
+}
+.containerProducts {
+  position: absolute;
+  top: 61px;
+  right: 5px;
+  background-color: #ffffff;
+  width: 600px;
+  z-index: 1;
+  color: #000000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #e3ded7;
+}
+.btnDelete {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.btnDelete:hover {
+  stroke: red;
+}
+.cartProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px 30px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.infoProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.8;
+  gap: 1em;
+}
+.productsCart {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.8;
+  gap: 1em;
+}
+.cantidadProducto {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.tituloProducto {
+  font-size: 20px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.precioProducto {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.totalPrecio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+.totalPrecio h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.totalPrecio span {
+  font-size: 20px;
+  font-weight: 900;
 }
 
 /* #endregion */
 
 /* #region imagen del cafe */
 #description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 48px 40px;
-    gap: 8px;
-    background: rgba(227, 222, 215, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 85px 40px;
+  gap: 8px;
+  background: rgba(227, 222, 215, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cup {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 70px 0px 0px 0px;
-    gap: 16px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 70px 0px 0px 0px;
+  gap: 16px;
 }
 
 #cupPlant {
-    color: #2A5B45;
-    width: 588px;
-    height: 24px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+  color: #2a5b45;
+  width: 588px;
+  height: 24px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 #world {
-    width: 588px;
-    height: 88px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 44px;
-    color: #000000;
+  width: 588px;
+  height: 88px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  color: #000000;
 }
 
 #weWork {
-    width: 588px;
-    height: 32px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #111827;
+  width: 588px;
+  height: 32px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111827;
 }
 
 #buttonOrg {
-    width: 168px;
-    height: 40px;
-    background: #1F1815;
-    border-radius: 4px;
-    border: none;
-    margin-right: 16px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    cursor: pointer;
+  width: 168px;
+  height: 40px;
+  background: #1f1815;
+  border-radius: 4px;
+  border: none;
+  margin-right: 16px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 #buttonBuy {
-    width: 137px;
-    height: 40px;
-    background: #2A5B45;
-    border-radius: 4px;
-    border: none;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    cursor: pointer;
+  width: 137px;
+  height: 40px;
+  background: #2a5b45;
+  border-radius: 4px;
+  border: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 #boxCupCoffee {
-    width: 48%;
+  width: 48%;
 }
 
 #cupCoffee {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* #endregion */
 
 /* #region Condiciones */
 #service {
-    background-image: url(/images/Background\ coffee.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 48px 147px;
-    gap: 24px;
+  background-image: url(/images/Background\ coffee.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 147px;
+  gap: 24px;
 }
 
 #conditions {
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
 }
 
 #cardWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    width: 996px;
-    height: 232px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 996px;
+  height: 232px;
 }
 
 .card {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    width: 316px;
-    height: 263px;
-    background: #FFFFFF;
-    border: 1px solid #F7F5F3;
-    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
-    border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 316px;
+  height: 263px;
+  background: #ffffff;
+  border: 1px solid #f7f5f3;
+  box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
+  border-radius: 8px;
 }
 
 .card img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px;
-    gap: 8px;
-    width: 64px;
-    height: 64px;
-    background: #2A5B45;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 8px;
+  width: 64px;
+  height: 64px;
+  background: #2a5b45;
+  border-radius: 20px;
 }
 
 .card h3 {
-    width: 268px;
-    height: 24px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #2B2A2B;
+  width: 268px;
+  height: 24px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #2b2a2b;
 }
 
 .card p {
-    width: 268px;
-    height: 48px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #111827;
-
+  width: 268px;
+  height: 48px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #111827;
 }
 
 #truck {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 /* #endregion */
@@ -300,282 +400,282 @@ header {
 /* #region Novedades */
 
 #sectionNov {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    gap: 40px;
-    height: 603.39px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  height: 603.39px;
 }
 
 #nov {
-    width: 120px;
-    height: 28px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #2A5B45;
+  width: 120px;
+  height: 28px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2a5b45;
 }
 
-#products {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    width: 1200px;
-    height: 391.39px;
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 1200px;
+  height: 391.39px;
 }
 
-#products>div {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 24px;
-    gap: 24px;
-    width: 282px;
-    height: 391.39px;
-    border: 1px solid #E3DED7;
-    border-radius: 8px;
-    cursor: pointer;
+.products > div {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+  width: 282px;
+  height: 391.39px;
+  border: 1px solid #e3ded7;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-#products>div:hover {
-    background: #F7F5F3;
+.products > div:hover {
+  background: #f7f5f3;
 }
 
-#products>div:hover button {
-    background: #2A5B45;
+.products > div:hover button {
+  background: #2a5b45;
 }
 
-#products>div>a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
+.products > div > a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
 }
 
-#products>div>p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
+.products > div > p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
 }
 
 .buttonProducts {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-    gap: 8px;
-    width: 59px;
-    height: 34px;
-    background: rgba(42, 91, 69, 0.7);
-    border-radius: 4px;
-    border: none;
-    color: #FFFFFF;
-    cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+  width: 59px;
+  height: 34px;
+  background: rgba(42, 91, 69, 0.7);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .seeAll {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2em;
-    padding-left: 5em;
-    gap: 16px;
-    width: 150px;
-    height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em;
+  padding-left: 5em;
+  gap: 16px;
+  width: 150px;
+  height: 24px;
 }
 
-.seeAll>a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
+.seeAll > a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
 }
 
 .seeAll img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* #endregion */
 
 /* #region FAQ */
 .faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 386px;
-    gap: 24px;
-    background: #2A5B45;
-    /* height: 520px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 386px;
+  gap: 24px;
+  background: #2a5b45;
+  /* height: 520px; */
 }
 
-.faqTittle>h2 {
-    height: 28px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
+.faqTittle > h2 {
+  height: 28px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
 }
 
 .faqContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 668px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 668px;
 }
 
 #placeOrder {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    /* gap: 16px; */
-    width: 668px;
-    height: 17px;
-    background: #FFFFFF;
-    /* border-radius: 10px; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  /* gap: 16px; */
+  width: 668px;
+  height: 17px;
+  background: #ffffff;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 1s ease-in;
 }
 
 #placeOrder div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    /* gap: 439px; */
-    border-bottom: 2px solid;
-    border-color: #E3DED7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  /* gap: 439px; */
+  border-bottom: 2px solid;
+  border-color: #e3ded7;
+  width: 100%;
+}
+
+#placeOrder > div > h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  color: #2b2a2b;
+  padding-bottom: 15px;
+}
+
+.pOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  width: 668px;
+  height: 70px;
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 1s linear;
+  opacity: 100;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2b2a2b;
+}
+#segundaPregunta{
     width: 100%;
-
-
 }
-
-#placeOrder>div>h3 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    color: #2B2A2B;
-    padding-bottom: 15px;
-}
-
-#pOrder {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-    width: 668px;
-    /* height: 95px; */
-    background: #FFFFFF;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#pOrder>p {
-    display: flex;
-    justify-content: center;
-    padding-top: 3px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #2B2A2B;
-    width: 100%;
-}
-
 #lowPrices {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-    width: 668px;
-    height: 12px;
-    background: #F7F5F3;
-    /* border-radius: 10px; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  width: 668px;
+  height: 12px;
+  background: #f7f5f3;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 1s ease-in;
 }
 
 #lowPrices div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 0px;
-    border-bottom: 2px solid;
-    border-color: #E3DED7;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 0px;
+  border-bottom: 2px solid;
+  border-color: #e3ded7;
+  width: 100%;
 }
 
-#lowPrices>div>h3 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    color: #2B2A2B;
-    width: 100%;
-    padding-bottom: 10px;
+#lowPrices > div > h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  color: #2b2a2b;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-#pLowerPrice {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-    width: 668px;
-    /* height: 110px; */
-    background: #F7F5F3;
-    /* border-radius: 10px; */
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+.pLowerPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  width: 668px;
+  height: 90px;
+  background: #f7f5f3;
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 100;
+  transition: all 1s linear;
 }
 
-#pLowerPrice>p {
-    font-family: 'Outfit';
+.pLowerPrice > p {
+    font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #2B2A2B;
-    padding-top: 3px;
-    width: 620px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2b2a2b;
+  padding-top: 3px;
+  width: 620px;
 }
 
 #sendCoffee {
@@ -586,10 +686,11 @@ header {
     gap: 16px;
     width: 668px;
     height: 12px;
-    background: #F7F5F3;
+    background: #f7f5f3;
     /* border-radius: 10px; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: all 1s ease-in;
 }
 #sendCoffee div {
     display: flex;
@@ -599,23 +700,23 @@ header {
     padding: 0px;
     gap: 0px;
     border-bottom: 2px solid;
-    border-color: #E3DED7;
+    border-color: #e3ded7;
     width: 100%;
 }
-#sendCoffee>div> h3 {
-    font-family: 'Outfit';
+#sendCoffee > div > h3 {
+    font-family: "Outfit";
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     display: flex;
     align-items: flex-end;
-    color: #2B2A2B;
-    width: 100%;
-    padding-bottom: 10px;
+    color: #2b2a2b;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-#pSend {
+.pSend {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -623,22 +724,30 @@ header {
     gap: 16px;
     width: 668px;
     /* height: 110px; */
-    background: #F7F5F3;
+    background: #f7f5f3;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    opacity: 100;
+  transition: all 1s linear;
 }
 
-#pSend>p {
-    font-family: 'Outfit';
+.pSend > p {
+    font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #2B2A2B;
+    color: #2b2a2b;
     padding-top: 3px;
     width: 620px;
 }
 
+.invisible {
+  /* display: none; */
+  height: 0;
+  padding: 0 24px;
+  opacity: 0;
+}
 #questions {
     display: flex;
     flex-direction: row;
@@ -649,592 +758,587 @@ header {
 }
 
 #questions a {
-    font-family: 'Outfit';
+    font-family: "Outfit";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 }
 
 #questions img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* #endregion */
 
 /* #region shopCoffee */
 #shop {
-    /* height: 480px; */
-    background: #F7F5F3
+  /* height: 480px; */
+  background: #f7f5f3;
 }
 
 #shopCoffe {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    padding: 44.61px 40px 45.39px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  padding: 44.61px 40px 45.39px 40px;
 }
 
 #tryIt {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 457px;
-    height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 457px;
+  height: 116px;
 }
 
-#tryIt>h2 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #2A5B45;
+#tryIt > h2 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2a5b45;
 }
 
-#tryIt>p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #111827;
+#tryIt > p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111827;
 }
 
-#tryIt>div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
+#tryIt > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
 }
 
-#tryIt>div>a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration-line: underline;
-    color: #000000;
+#tryIt > div > a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #000000;
 }
 
 #imgCoffeeShop {
-    width: 48%;
+  width: 48%;
 }
 
 #imgCoffeeShop img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #arrowNov {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* #endregion */
 
 /* #region Formulario */
 #containerTwoTone {
-    padding: 0px 40px;
-    height: 552px;
-    background: #E3DED7;
-
+  padding: 0px 40px;
+  height: 552px;
+  background: #e3ded7;
 }
 
 #subContainerTwoTone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-    height: 552px;
-    background: #E3DED7;
-    opacity: 0.9;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  height: 552px;
+  background: #e3ded7;
+  /* opacity: 0.9; */
 }
 
 #contacSection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 32px;
-    width: 50%;
-    height: 320px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 50%;
+  height: 320px;
 }
 
 #withUs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    height: 68px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  height: 68px;
 }
 
-#withUs>h3 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #111827;
+#withUs > h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #111827;
 }
 
-#withUs>p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #6B7280;
+#withUs > p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6b7280;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 32px;
-    gap: 24px;
-    height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 32px;
+  gap: 24px;
+  height: 220px;
 }
 
 .paragraph {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #6B7280;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6b7280;
 }
 
 #adress {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    /* width: 344px; */
-    height: 27px
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  /* width: 344px; */
+  height: 27px;
 }
 
 #emailPhone {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    
-    height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  height: 60px;
 }
 
 #phone {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    gap: 12px;
-    
-    height: 24px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 12px;
+
+  height: 24px;
 }
 
 #email {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    gap: 12px;
-    height: 24px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 12px;
+  height: 24px;
 }
 
-#content>p>a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
+#content > p > a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
 }
 
 #formSection {
-    width: 50%;
+  width: 50%;
 }
 
 #formSection form {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 32px 32px 48px;
-    height: 488px;
-    background: #FFFFFF;
-
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 32px 48px;
+  height: 488px;
+  background: #ffffff;
 }
 
 #inpName {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
 }
 
 #inpName label {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #374151
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #374151;
 }
 
 #nameArea {
-    padding: 9px 13px;
-    width: 90%;
-    height: 15px;
-    background: #FFFFFF;
-    border: 1px solid #D1D5DB;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
+  padding: 9px 13px;
+  width: 90%;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 
 #nameArea:focus {
-    outline-color: #3F8F6B;
+  outline-color: #3f8f6b;
 }
 
 #inpEmail {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 24px;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 24px;
+  gap: 4px;
 }
 
 #inpEmail label {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #374151
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #374151;
 }
 
 #emailArea {
-    padding: 9px 13px;
-    width: 90%;
-    height: 15px;
-    background: #FFFFFF;
-    border: 1px solid #D1D5DB;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
+  padding: 9px 13px;
+  width: 90%;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 
 #emailArea:focus {
-    outline-color: #3F8F6B;
+  outline-color: #3f8f6b;
 }
 
 #selectArea {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 24px;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 24px;
+  gap: 4px;
 }
 
 #selectArea label {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #374151;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #374151;
 }
 
 #telInp {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    background: #FFFFFF;
-    border: 1px solid #D1D5DB;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    width: 93.5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 93.5%;
 }
 
 #telInp:focus-within {
-    outline: auto #3F8F6B;
+  outline: auto #3f8f6b;
 }
 
 #telInp select {
-    padding: 9px 13px;
-    gap: 4px;
-    width: 68px;
-    height: 35px;
-    background: #FFFFFF;
-    border-radius: 6px;
-    border: none;
+  padding: 9px 13px;
+  gap: 4px;
+  width: 68px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: none;
 }
 
 #telInp select:focus {
-    outline: none;
+  outline: none;
 }
 
-#telInp>select {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 405px;
-    font-size: 14px;
-    line-height: 16px;
-    color: #111827;
+#telInp > select {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 405px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111827;
 }
 
 #telInp input {
-    padding: 9px 13px;
-    width: 100%;
-    height: 15px;
-    background: #FFFFFF;
-    border-radius: 6px;
-    border: none;
+  padding: 9px 13px;
+  width: 100%;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: none;
 }
 
 #telInp input:focus {
-    outline: none;
+  outline: none;
 }
 
 #textArea {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
 }
 
 #textArea textarea:focus {
-    outline-color: #3F8F6B;
+  outline-color: #3f8f6b;
 }
 
 #textArea p {
-    height: 16px;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #374151;
-    padding-top: 20px;
+  height: 16px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #374151;
+  padding-top: 20px;
 }
 
 #textArea textarea {
-    box-sizing: border-box;
-    width: 496px;
-    height: 122px;
-    background: #FFFFFF;
-    border: 1px solid #D1D5DB;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    width: 93.5%;
+  box-sizing: border-box;
+  width: 496px;
+  height: 122px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 93.5%;
 }
 
-#textArea>textarea {
-    padding: 12px 22px 22px 18px;
+#textArea > textarea {
+  padding: 12px 22px 22px 18px;
 }
 
 #policy {
-    padding-top: 24px;
-    padding-bottom: 28px;
-    gap: 12px;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  gap: 12px;
 }
 
 #policy label {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #374151;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #374151;
 }
 
-#policy>label>a {
-    color: #000000;
+#policy > label > a {
+  color: #000000;
 }
 
 #checkbox {
-    accent-color: #2A5B45;
+  accent-color: #2a5b45;
 }
 
 #sendButton {
-    color: #FFFFFF;
-    gap: 8px;
-    width: 90px;
-    height: 40px;
-    background: #2A5B45;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+  color: #ffffff;
+  gap: 8px;
+  width: 90px;
+  height: 40px;
+  background: #2a5b45;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 /* #endregion */
 
 /* #region Footer */
 footer {
-    background: #1F1815;
+  background: #1f1815;
 }
 
 #terminos {
-    display: flex;
-    flex-direction: column;
-    padding: 28px 40px 37px 40px;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 40px 37px 40px;
+  gap: 16px;
 }
 
 #logoFooter {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23.4628px;
-    line-height: 35px;
-    color: #FFFFFF;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.4628px;
+  line-height: 35px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #storeSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #helpSection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 }
 
-#helpSection>h3 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
+#helpSection > h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
 }
 
 #telfButton {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 24px;
-    gap: 8px;
-    width: 182px;
-    height: 48px;
-    background: #515051;
-    border-radius: 4px;
-    border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 24px;
+  gap: 8px;
+  width: 182px;
+  height: 48px;
+  background: #515051;
+  border-radius: 4px;
+  border: none;
 }
 
-#telfButton>a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding-top: 4px;
+#telfButton > a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 4px;
 }
 
 #emailButton {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 24px;
-    gap: 8px;
-    width: 232px;
-    height: 48px;
-    background: #515051;
-    border-radius: 4px;
-    border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 24px;
+  gap: 8px;
+  width: 232px;
+  height: 48px;
+  background: #515051;
+  border-radius: 4px;
+  border: none;
 }
 
-#emailButton>a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding-left: 3px;
-    padding-top: 2px;
+#emailButton > a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 3px;
+  padding-top: 2px;
 }
 
-#emailButton>img {
-    padding-top: 2px;
+#emailButton > img {
+  padding-top: 2px;
 }
 
 #subscription {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    right: -1%;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  right: -1%;
+  gap: 16px;
 }
 
 #subscription a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #cookies {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    right: 21%;
-    padding-bottom: 68px;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  right: 21%;
+  padding-bottom: 68px;
+  gap: 16px;
 }
 
 #cookies a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #rightsReserved {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #2B2A2B;
-    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b2a2b;
+  height: 40px;
 }
 
 #rightsReserved a {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* #endregion */

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  body {
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-image: url(../images/FondoSobre.jpg);
+    background-size: cover;
+
+    
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 800px;
+    margin-top: 0.1em;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }

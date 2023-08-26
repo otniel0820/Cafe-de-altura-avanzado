@@ -16,22 +16,22 @@
   <body>
     <!-- #region Header -->
     <header>
-      <div class="logo">
+      <a href="./index.html" class="logo"><div class="logo">
         <p id="textLogo">cafedealtura.com</p>
         <img src="/images/Vector.png" alt="taza de cafe" text />
-      </div>
+      </div></a>
       <div class="menu">
-        <a href="./tienda.html" target="_blank" class="textMenu">Tienda</a>
-        <a href="./suscripcion.html" target="_blank" class="textMenu"
+        <a href="./tienda/tienda.html" class="textMenu">Tienda</a>
+        <a href="./links/suscripcion.html"  class="textMenu"
           >Suscripcion</a
         >
-        <a href="./paraEmpresas.html" target="_blank" class="textMenu"
+        <a href="./links/paraEmpresas.html"  class="textMenu"
           >Para empresas</a
         >
-        <a href="./sobreNosotros.html" target="_blank" class="textMenu"
+        <a href="./links/sobreNosotros.html"  class="textMenu"
           >Sobre nosotros</a
         >
-        <a href="./Contactos.html" target="_blank" class="textMenu">Contacto</a>
+        <a href="./links/Contactos.html"  class="textMenu">Contacto</a>
       </div>
       <div id="contact">
         <div id="telNavBar">
@@ -39,13 +39,37 @@
           <a href="" id="phoneNumber">+34 919 49 05 18</a>
         </div>
         <div id="boxButton">
-          <a href="./inicioSesion/inicioS.html" target="_blank"><button id="buttonSession">Iniciar Sesión</button></a>
+          <a href="./inicioSesion/inicioS.html" ><button id="buttonSession">Iniciar Sesión</button></a>
         </div>
       </div>
-      <div>
-        <a href="./car.html" target="_blank" id="buyCar"
+      <div class="containerCart">
+        <button id="buyCar"
           ><img src="/images/Carr.png" alt="Car Shopping"
-        /></a>
+        /></button>
+        <div class="countProducts">
+          <span id="count">0</span>
+        </div>
+        <div class="containerProducts cartHidden">
+            <div class="cartProduct">
+            <div class="infoProduct">
+              <!-- <span class="cantidadProducto"></span>
+              <div class="tituloProducto"></div>
+              <span class="precioProducto"></span> -->
+            </div>
+            <!-- <div class="deleteProduct">
+               <svg class="btnDelete" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"></path>
+              </svg> -->
+            <!-- </div> --> 
+          </div>
+          
+          
+
+          <div class="totalPrecio">
+            <h3>Total</h3>
+            <span id="totalPagar"></span>
+          </div>
+        </div>
       </div>
     </header>
     <!-- #endregion -->
@@ -60,7 +84,7 @@
           hogar.
         </p>
         <div id="boxButton2">
-          <a href="./sobreNosotros.html" target="_blank"
+          <a href="./links/sobreNosotros.html" 
             ><button id="buttonOrg">Descubrir orígenes</button></a
           >
           <a href="#sectionNov"><button id="buttonBuy">Comprar café</button></a>
@@ -110,7 +134,7 @@
       <article>
         <h2 id="nov">Novedades</h2>
       </article>
-      <article id="products">
+      <article class="products">
         <!-- <div>
                 <img src="/images/cafe costa rica.png" alt="Coffee Costa Rica">
                 <a href="">
@@ -145,7 +169,7 @@
             </div> -->
       </article>
       <article class="seeAll">
-        <a href="./tienda.html" target="_blank">Ver todos</a>
+        <a href="./tienda/tienda.html">Ver todos</a>
         <img src="/images/flechita.png" alt="Flecha" />
       </article>
     </section>
@@ -168,13 +192,13 @@
           </div>
           
         </div>
-        <article id="pOrder">
-          <p >
+        
+          <p class="pOrder">
           Selecciona el café que desees probar y completa el proceso de
           compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te
           lo mandemos a casa y así nunca te quedarás sin café
         </p>
-      </article>
+      
         </div>
         <div>
           <div id="lowPrices">
@@ -187,7 +211,7 @@
             /></button>
           </div>
         </div>
-        <article id="pLowerPrice">
+        <article class="pLowerPrice">
             <p >
             Viajamos constantemente para encontrar los mejores granos y a los
             agricultores más exigentes. Si podemos ofrecerte estos precios es
@@ -209,7 +233,7 @@
             /></button>
           </div> 
         </div>
-        <article id="pSend">
+        <article class="pSend">
             <p >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
             earum modi? Omnis necessitatibus est eaque qui delectus cum id
@@ -221,7 +245,7 @@
         
       </article>
       <article id="questions">
-        <a href="">Resolvemos tus dudas</a>
+        <a href="./links/Contactos.html">Resolvemos tus dudas</a>
         <img src="/images/Flecha blanca.png" alt="Flecha" />
       </article>
     </section>
@@ -236,7 +260,7 @@
             granos de café antes de hacer tu pedido y llévate un descuento
           </p>
           <div>
-            <a href="#contactSection">Como llegar</a>
+            <a href="https://www.google.com/maps/search/742+Evergreen+Terrace++Springfield,+OR+12345/@44.11915,-123.2225712,7z/data=!3m1!4b1?entry=ttu" >Como llegar</a>
             <img src="/images/flechita.png" alt="Flecha" id="arrowNov" />
           </div>
         </article>
@@ -278,7 +302,7 @@
             </div>
             <p class="paragraph">
               ¿Buscas Trabajo?
-              <a href="./ofertasTrabajo.html" target="_blank"
+              <a href="./links/ofertasTrabajo.html" 
                 ><b> Ver nuestas ofertas</b></a
               >
             </p>
@@ -326,8 +350,8 @@
             <div id="policy">
               <input type="checkbox" name="" id="checkbox" />
               <label for=""
-                >Acepta la <a href=""><b>Politica de Privacidad</b></a> y los
-                <a href=""><b>Terminos y Condiciones.</b></a></label
+                >Acepta la <a href="./links/politicasPrivacidad.html"><b>Politica de Privacidad</b></a> y los
+                <a href="./links/terminosCondiciones.html"><b>Terminos y Condiciones.</b></a></label
               >
             </div>
             <input type="submit" id="sendButton"></input>
@@ -339,10 +363,10 @@
     <!-- #region footer -->
     <footer>
       <section id="terminos">
-        <article class="logo">
+        <a href="./index.html" class="logo"><article class="logo">
           <p id="logoFooter">cafedealtura.com</p>
           <img src="/images/Vector.png" alt="taza de cafe" text />
-        </article>
+        </article></a>
         <article id="storeSection">
           <div id="helpSection">
             <h3>Te ayudamos en</h3>
@@ -358,27 +382,27 @@
             </button>
           </div>
           <div id="subscription">
-            <a href="./tienda.html" target="_blank">Tienda</a>
-            <a href="./suscripcion.html" target="_blank">Suscripción</a>
-            <a href="./paraEmpresas.html" target="_blank">Para empresas</a>
-            <a href="./sobreNosotros.html" target="_blank">Sobre nosotros</a>
-            <a href="./Contactos.html" target="_blank">Contacto</a>
+            <a href="./tienda/tienda.html" >Tienda</a>
+            <a href="./links/suscripcion.html" >Suscripción</a>
+            <a href="./links/paraEmpresas.html" >Para empresas</a>
+            <a href="./links/sobreNosotros.html" >Sobre nosotros</a>
+            <a href="./links/Contactos.html" >Contacto</a>
           </div>
           <div id="cookies">
-            <a href="./politicasPrivacidad.html" target="_blank"
+            <a href="./links/politicasPrivacidad.html" 
               >Política de privacidad</a
             >
-            <a href="./politicaCookies.html" target="_blank"
+            <a href="./links/politicaCookies.html" 
               >Política de cookies</a
             >
-            <a href="./terminosCondiciones.html" target="_blank"
+            <a href="./links/terminosCondiciones.html" 
               >Términos y condiciones</a
             >
           </div>
         </article>
       </section>
       <section id="rightsReserved">
-        <a href="./derechosReservados.html" target="_blank"
+        <a href="./links/derechosReservados.html" 
           >Todos los derechos reservados - Café de Altura SL - 2022</a
         >
       </section>
