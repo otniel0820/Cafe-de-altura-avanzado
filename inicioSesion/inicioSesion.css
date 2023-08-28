@@ -76,8 +76,12 @@ body {
 
 .form-container .social-button.apple {
   background-color: #212121;
-  text-decoration: none;
   
+  
+}
+
+#btnApple{
+  text-decoration: none;
 }
 
 .form-container .form {

@@ -137,12 +137,13 @@
     right: 5px;
     background-color: #ffffff;
     width: 600px;
+    max-height: 90vh;
     z-index: 1;
     color: #000000;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     background-color: #e3ded7;
-    
+    overflow-y: scroll;
   }
   .btnDelete {
     width: 45px;
@@ -158,6 +159,7 @@
     align-items: center;
     padding: 30px 0px 30px 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
   }
   .infoProduct {
     display: flex;
@@ -166,6 +168,7 @@
     align-items: center;
     flex: 0.8;
     gap: 1em;
+    
   }
   .productsCart {
     display: flex;
