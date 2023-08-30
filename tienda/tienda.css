@@ -20,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
+    z-index: 1;
   }
   
   .logo {
@@ -328,4 +329,252 @@
   
   .seeAll img {
     cursor: pointer;
+  }
+
+  /* condiciones */
+
+  #service {
+    background-image: url(/images/Background\ coffee.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 147px;
+    gap: 24px;
+  }
+  
+  #conditions {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  
+  #cardWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 996px;
+    height: 232px;
+  }
+  
+  .card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 316px;
+    height: 263px;
+    background: #ffffff;
+    border: 1px solid #f7f5f3;
+    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
+    border-radius: 8px;
+  }
+  
+  .card img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 8px;
+    width: 64px;
+    height: 64px;
+    background: #2a5b45;
+    border-radius: 20px;
+  }
+  
+  .card h3 {
+    width: 268px;
+    height: 24px;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #2b2a2b;
+  }
+  
+  .card p {
+    width: 268px;
+    height: 48px;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #111827;
+  }
+  
+  #truck {
+    margin-top: 25px;
+  }
+
+  /* footer */
+
+  footer {
+    background: #1f1815;
+  }
+  
+  #terminos {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 40px 37px 40px;
+    gap: 16px;
+  }
+  
+  #logoFooter {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.4628px;
+    line-height: 35px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #storeSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #helpSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+  }
+  
+  #helpSection > h3 {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #telfButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 182px;
+    height: 48px;
+    background: #515051;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  #telfButton > a {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 4px;
+  }
+  
+  #emailButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 232px;
+    height: 48px;
+    background: #515051;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  #emailButton > a {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-top: 2px;
+  }
+  
+  #emailButton > img {
+    padding-top: 2px;
+  }
+  
+  #subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: -1%;
+    gap: 16px;
+  }
+  
+  #subscription a {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #cookies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: 21%;
+    padding-bottom: 68px;
+    gap: 16px;
+  }
+  
+  #cookies a {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #rightsReserved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2a2b;
+    height: 40px;
+  }
+  
+  #rightsReserved a {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
   }

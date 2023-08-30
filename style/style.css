@@ -22,7 +22,6 @@ header {
   padding: 12px 40px;
 }
 
-
 .logo {
   display: flex;
   flex-direction: row;
@@ -558,7 +557,7 @@ header {
   /* border-radius: 10px; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 #placeOrder div {
@@ -596,7 +595,7 @@ header {
   background: #ffffff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
   opacity: 100;
   display: flex;
   justify-content: center;
@@ -608,8 +607,8 @@ header {
   line-height: 16px;
   color: #2b2a2b;
 }
-#segundaPregunta{
-    width: 100%;
+#segundaPregunta {
+  width: 100%;
 }
 #lowPrices {
   display: flex;
@@ -623,7 +622,7 @@ header {
   /* border-radius: 10px; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 #lowPrices div {
@@ -658,109 +657,110 @@ header {
   padding: 24px;
   gap: 16px;
   width: 668px;
-  height: 90px;
+  /* height: 90px; */
   background: #f7f5f3;
   /* border-radius: 10px; */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   opacity: 100;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 
 .pLowerPrice > p {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 400;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #2b2a2b;
   padding-top: 3px;
   width: 620px;
+  
 }
 
 #sendCoffee {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-    width: 668px;
-    height: 12px;
-    background: #f7f5f3;
-    /* border-radius: 10px; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transition: all 1s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  width: 668px;
+  height: 12px;
+  background: #f7f5f3;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.5s ease-in;
 }
 #sendCoffee div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 0px;
-    border-bottom: 2px solid;
-    border-color: #e3ded7;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 0px;
+  border-bottom: 2px solid;
+  border-color: #e3ded7;
+  width: 100%;
 }
 #sendCoffee > div > h3 {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    color: #2b2a2b;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  color: #2b2a2b;
   width: 100%;
   padding-bottom: 10px;
 }
 
 .pSend {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-    width: 668px;
-    /* height: 110px; */
-    background: #f7f5f3;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    opacity: 100;
-  transition: all 1s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  width: 668px;
+  /* height: 110px; */
+  background: #f7f5f3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 100;
+  transition: all 0.5s linear;
 }
 
 .pSend > p {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #2b2a2b;
-    padding-top: 3px;
-    width: 620px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2b2a2b;
+  padding-top: 3px;
+  width: 620px;
+  height: 50px;
 }
 
 .invisible {
-  /* display: none; */
   height: 0;
   padding: 0 24px;
   opacity: 0;
 }
 #questions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  height: 24px;
 }
 
 #questions a {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 600;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;

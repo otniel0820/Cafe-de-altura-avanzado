@@ -1,10 +1,4 @@
-//funcionalidad de botones de navBar, telefono e inicio de sesion no, el carro de compras si
-//boton descubrir origenes y comprar cafe
-//sccion de novedades que funciione y que agregue los productos al carrito
-// seccion de preguntas y respuestas que funciones las flechitas
-//seccion de como llegar
-//El formulario que funcione y envie la informacion a localStorage
-// footer que funciones todos los link
+//Cosas pòr hacer: utilizar confirm en formulario, acordeon plegado, sort de mayor a menor, completar la tienda, y que el ultimo cafe este (no habilitado)...plus: boton de ordenar, pointer no disponible, autochek del confirm 
 
 //carrito de compra
 const btnCart = document.getElementById("buyCar");
@@ -43,6 +37,7 @@ const cafeInfo = async () => {
   const articleProducts = document.querySelector(".products");
 
   //forEach que printa los productos en la pagina
+  
   products.forEach((cafe, indice) => {
     if (indice >= 0 && indice <= 3) {
       const divCard = document.createElement("div");
@@ -198,54 +193,128 @@ cafeInfo();
 
 //Zona de preguntas
 let invisible = false;
+let invisible1 = false;
+let invisible2 = false;
+
+
 const btnOrder = document.getElementById("btnOrder");
-btnOrder.style = "background-color:transparent;border:0px; cursor:pointer";
+btnOrder.style = "background-color:transparent;border:0px; cursor:pointer; transition: all 0.5s linear;";
 const btnLowPrice = document.getElementById("btnLowPrice");
-btnLowPrice.style = "background-color:transparent;border:0px; cursor:pointer";
+btnLowPrice.style = "background-color:transparent;border:0px; cursor:pointer; transition: all 0.5s linear;";
 const btnSend = document.getElementById("btnSend");
-btnSend.style = "background-color:transparent;border:0px; cursor:pointer";
+btnSend.style = "background-color:transparent;border:0px; cursor:pointer; transition: all 0.5s linear;";
 
 const pOrder = document.getElementsByClassName("pOrder")[0];
 // pOrder.style.transition = "opacity 0.5s ease";
+
+
+
 
 const pLowerPrice = document.getElementsByClassName("pLowerPrice")[0];
 
 const pSend = document.getElementsByClassName("pSend")[0];
 
 const placeOrder = document.getElementById("placeOrder");
+placeOrder.style.cursor='pointer'
+
 
 const lowPrice = document.getElementById("lowPrices");
-
+lowPrice.style.cursor='pointer'
 const sendCoffee = document.getElementById("sendCoffee");
+sendCoffee.style.cursor='pointer'
 
-btnOrder.addEventListener("click", () => {
-  hideShowP(pOrder, btnOrder, placeOrder);
+const faq1 = document.getElementById('faq1')
+const faq2 = document.getElementById('faq2')
+const faq3 = document.getElementById('faq3')
+
+const pFaq2 = document.getElementById('pFaq2')
+const pFaq3 = document.getElementById('pFaq3')
+
+placeOrder.addEventListener("click", () => {
+  hideShowP(pOrder, btnOrder, placeOrder,faq1);
 });
 
-btnLowPrice.addEventListener("click", () => {
-  hideShowP(pLowerPrice, btnLowPrice, lowPrice);
+lowPrice.addEventListener("click", () => {
+  hideShowP1(pLowerPrice, btnLowPrice, lowPrice,faq2,pFaq2);
 });
-btnSend.addEventListener("click", () => {
-  hideShowP(pSend, btnSend, sendCoffee);
+sendCoffee.addEventListener("click", () => {
+  hideShowP2(pSend, btnSend, sendCoffee,faq3,pFaq3);
 });
 
-function hideShowP(p, btn, div) {
+function hideShowP(divBot, btn, divTop, faq,p) {
+  
   if (invisible) {
     invisible = false;
-    p.classList.remove("invisible");
-    div.style = "border-bottom-left-radius: 0px";
-    div.style = "border-bottom-right-radius: 0px";
+    divBot.classList.remove("invisible");
+    divTop.style = "border-bottom-left-radius: 0px";
+    divTop.style = "border-bottom-right-radius: 0px";
+    divTop.style = "cursor:pointer";
     btn.style.transform = "";
+    faq.style= 'border-bottom: 2px solid;border-color: #e3ded7;'
   } else {
+    faq.style.border = 'none'
     invisible = true;
-    p.classList.add("invisible");
-    div.style =
-      "border-bottom-left-radius: 10px;border-bottom-right-radius: 10px";
+    divBot.classList.add("invisible");
+    divTop.style =
+    "border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; cursor:pointer";
     btn.style.transform = "rotate(180deg)";
   }
 }
 
+function hideShowP1(divBot, btn, divTop, faq,p) {
+  
+  if (invisible1) {
+    invisible1 = false;
+    divBot.classList.remove("invisible");
+    p.classList.remove("invisible");
+    p.style.display='block'
+    divTop.style = "border-bottom-left-radius: 0px";
+    divTop.style = "border-bottom-right-radius: 0px";
+    divTop.style = "cursor:pointer";
+    btn.style.transform = "";
+    faq.style= 'border-bottom: 2px solid;border-color: #e3ded7;'
+    pFaq2.style='display:block'
+    
+  } else {
+    faq.style.border = 'none'
+    invisible1 = true;
+    divBot.classList.add("invisible");
+    p.classList.add("invisible");
+    divTop.style =
+    "border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; cursor:pointer";
+    btn.style.transform = "rotate(180deg)";
+    console.log('hola');
+    setTimeout(() => {
+      pFaq2.style='display:none';
+    }, 500);
+    
+  }
+}
+
+function hideShowP2(divBot, btn, divTop, faq,p) {
+  
+  if (invisible2) {
+    invisible2 = false;
+    divBot.classList.remove("invisible");
+    p.classList.remove("invisible");
+    divTop.style = "border-bottom-left-radius: 0px";
+    divTop.style = "border-bottom-right-radius: 0px";
+    divTop.style = "cursor:pointer";
+    btn.style.transform = "";
+    faq.style= 'border-bottom: 2px solid;border-color: #e3ded7;'
+  } else {
+    faq.style.border = 'none'
+    invisible2 = true;
+    divBot.classList.add("invisible");
+    p.classList.add("invisible");
+    divTop.style =
+      "border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; cursor:pointer";
+    btn.style.transform = "rotate(180deg)";
+    
+  }
+}
 //Formulario
+
 const nameArea = document.getElementById("nameArea");
 const emailArea = document.getElementById("emailArea");
 const phoneArea = document.getElementById("phoneArea");
@@ -274,7 +343,11 @@ function addFormData(event) {
   } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailArea.value)) {
     alert("You must enter the correct Email Format");
   } else if (!checkbox.checked) {
-    alert("Please accept the terms and conditions");
+    const confirmCheck = confirm("Please accept the terms and conditions");
+    if (confirmCheck) {
+      checkbox.checked = true
+      
+    }
   } else {
     newFormData.push(FormData);
     localStorage.setItem("FormData", JSON.stringify(newFormData));
